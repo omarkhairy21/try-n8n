@@ -16,7 +16,7 @@ services:
       - key: PGDATABASE
         fromDatabase:
           name: n8nDB
-          property: databases
+          property: database
       - key: PGPORT
         fromDatabase:
           name: n8nDB
@@ -29,8 +29,6 @@ services:
         fromDatabase:
           name: n8nDB
           property: password
-
-
 
 databases:
   - name: n8nDB
