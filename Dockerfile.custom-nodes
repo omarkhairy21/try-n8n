@@ -1,0 +1,11 @@
+FROM node:16
+
+WORKDIR /app 
+
+COPY n8n-nodes-starter .
+
+RUN echo $(ls -1 /tmp/dir)
+
+RUN npm install
+
+RUN npm run build 
